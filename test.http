@@ -1,0 +1,24 @@
+### get all item
+GET http://127.0.0.1:3000/items HTTP/1.1
+
+### get single item
+GET http://127.0.0.1:3000/items/2 HTTP/1.1
+
+### post single item
+POST http://127.0.0.1:3000/items HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "test"
+}
+
+### delete single item
+DELETE http://127.0.0.1:3000/items/3 HTTP/1.1
+
+### update single item
+PATCH http://127.0.0.1:3000/items/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "test edit dit"
+}
